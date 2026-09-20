@@ -3,3 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Inter',sans-serif;
+    background-color: #0000;
+    color: #fff;
+}
+
+
+/* ================ CONTAINER FOR HEADER ===============*/
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-image: url('../assets/images/header/headerbackround.avif');
+    background-size: cover;
+    background-position: center top;
+    background-position: 65% top;
+}
+
+/* =================== NAV PANEL ================= */
+
+.hero-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    z-index: 10;
+}
+
+
+/* ================= NAV LINKS =====================*/
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover{
+    opacity: 1;
+}
+
+/* =========== HEADER CONTENT */
+
+
+.hero-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    position: relative
+    ;
+}
+.text-left, .text-right{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    z-index: 5;
+}
+
+.text-left{
+    grid-column: 1;
+    font-size: 18px;
+
+
+}
+
+.text-right{
+    grid-column: 3;
+    max-width: 320px;
+}
